@@ -17,6 +17,12 @@ const locations = [
    "button text":["Buy 10 health (10 gold)","Buy weapon (30 gold)","Go to town square"],
    text : "You enter the store.",
    "button functions":[buyHealth,buyWeapon,goTown]
+   },
+   {
+   name:"cave",
+   "button text":["Fight slime","Fight fanged beast","Go to town square"],
+   "button functions":[fightSlime,fightBeast,goTown],
+   text:"You enter the cave. You see some monsters."
    }
 ];
 
@@ -67,7 +73,7 @@ function fightSlime(){
 }
 
 function fightBeast(){
-   
+
 }
 
 function update(location){
