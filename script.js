@@ -39,6 +39,7 @@ button3.onclick = fightDragon;
 
 
 function goTown() {
+   update(locations);
  }
 
 function goStore(){
