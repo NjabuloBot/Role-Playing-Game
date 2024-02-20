@@ -60,3 +60,7 @@ function buyWeapon(){
 
 }
 
+function update(location){
+
+}
+
