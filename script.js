@@ -44,6 +44,8 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 
 
+
+
 function goTown() {
    update(locations[0]);
  }
@@ -63,6 +65,8 @@ function fightDragon(){
 function buyHealth(){
    gold = gold - 10;
    health = health + 10;
+   goldText.innerText = gold;
+   healthText.innerText = health; 
 }
 
 function buyWeapon(){
