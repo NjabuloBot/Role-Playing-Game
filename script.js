@@ -84,7 +84,8 @@ function goCave(){
 }
 
 function fightDragon(){
-   console.log("Fighting dragon.");
+   fighting = 2;
+   goFight;
 }
 
 function buyHealth(){
@@ -125,7 +126,8 @@ function fightSlime(){
 }
 
 function fightBeast(){
-
+   fighting = 1;
+   goFight;
 }
 
 function update(location){
