@@ -4,6 +4,26 @@ let gold = 50;
 let currentWeapon = 0;
 let fighting;
 let monsterHealth;
+
+//variables for selecting buttons
+const button1 = document.querySelector("#button1");
+const button2 = document.querySelector("#button2");
+const button3 = document.querySelector("#button3");
+
+//variables that hold displayed text
+const text = document.querySelector("#text");
+const xpText = document.querySelector("#xpText");
+const healthText = document.querySelector("#healthText");
+const goldText = document.querySelector("#goldText");
+const monsterStats = document.querySelector("#monsterStats");
+const monsterName = document.querySelector("#monsterName");
+const monsterHealthText = document.querySelector("#monsterHealth");
+
+//This is where variables get initialized when they get clicked
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
+
 let inventory = ["stick"];
 const weapons = [
    {
@@ -48,27 +68,14 @@ const locations = [
    "button text":["Fight slime","Fight fanged beast","Go to town square"],
    "button functions":[fightSlime,fightBeast,goTown],
    text:"You enter the cave. You see some monsters."
+   },
+   {
+      name:"fight",
+      "button text":["Attack","Dodge","Run"],
+      "button functions":[attack,dodge,goTown],
+      text:"You are fighting a monster."
    }
 ];
-
-const button1 = document.querySelector("#button1");
-const button2 = document.querySelector("#button2");
-const button3 = document.querySelector("#button3");
-
-const text = document.querySelector("#text");
-const xpText = document.querySelector("#xpText");
-const healthText = document.querySelector("#healthText");
-const goldText = document.querySelector("#goldText");
-const monsterStats = document.querySelector("#monsterStats");
-const monsterName = document.querySelector("#monsterName");
-const monsterHealthText = document.querySelector("#monsterHealth");
-
-//initialize buttons
-button1.onclick = goStore;
-button2.onclick = goCave;
-button3.onclick = fightDragon;
-
-
 
 
 function goTown() {
@@ -161,5 +168,5 @@ function attack(){
 }
 
 function dodge(){
-   
+
 }
