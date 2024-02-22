@@ -132,5 +132,7 @@ function update(location){
 }
 
 function sellWeapon(){
-   
+   if(inventory.length > 1){
+      
+   }
 }
