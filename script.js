@@ -131,3 +131,6 @@ function update(location){
    text.innerText = location.text;
 }
 
+function sellWeapon(){
+   
+}
