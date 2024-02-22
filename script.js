@@ -70,10 +70,10 @@ const locations = [
    text:"You enter the cave. You see some monsters."
    },
    {
-      name:"fight",
-      "button text":["Attack","Dodge","Run"],
-      "button functions":[attack,dodge,goTown],
-      text:"You are fighting a monster."
+   name:"fight",
+   "button text":["Attack","Dodge","Run"],
+   "button functions":[attack,dodge,goTown],
+   text:"You are fighting a monster."
    }
 ];
 
@@ -161,6 +161,7 @@ function sellWeapon(){
 
 function goFight(){
    update(locations[3]);
+   monsterHealth = monsters[fighting].health;
 }
 
 function attack(){
