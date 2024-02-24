@@ -224,6 +224,14 @@ function pick(guess){
 
 }
 
+function pickTwo(){
+   pick(2);
+}
+
+function pickEight(){
+   pick(8);
+}
+
 function getMonsterAttackValue(level){
    const hit = (level * 5) - (Math.floor(Math.random() * xp));
    return hit > 0 ? hit : 0;
